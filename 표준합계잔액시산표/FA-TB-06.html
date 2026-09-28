@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)표준 합계잔액시산표</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 1000px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.5; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 10px; }
+        h1 { text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 5px; letter-spacing: 5px; }
+        .base-date { text-align: center; font-size: 14px; margin-bottom: 30px; }
+        .header-table { width: 100%; margin-bottom: 10px; border: none; font-size: 13px; }
+        .header-table td { padding: 5px; border: none; vertical-align: bottom; }
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .main-table th, .main-table td { border: 1px solid #333; padding: 8px; }
+        .main-table th { background-color: #f4f6f8; text-align: center; font-weight: bold; font-size: 13px; }
+        .main-table td { text-align: right; font-family: 'Courier New', Courier, monospace; letter-spacing: 0.5px; }
+        .main-table td.acct-name { text-align: center; font-family: 'Malgun Gothic', sans-serif; font-weight: bold; }
+        .footer-box { border: 2px solid #333; padding: 15px; background-color: #f9f9f9; font-size: 13px; }
+        .footer-box p { margin: 5px 0; }
+        .highlight { color: #d9534f; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ 소득세법 시행규칙 [별지 제40호의9서식] <개정 2015.3.13.></div>
+    <h1>표준합계잔액시산표</h1>
+    <div class="base-date">( 2023년 12월 31일 현재)</div>
+
+    <table class="header-table">
+        <tr>
+            <td style="text-align: left; width: 40%;"><strong>상호:</strong> (주)에이치에스리테일<br><strong>사업자등록번호:</strong> 215-87-45128</td>
+            <td style="text-align: center; width: 40%;"><strong>과세기간:</strong><br>2023.01.01. 부터 2023.12.31. 까지</td>
+            <td style="text-align: right; width: 20%;"><strong>단위:</strong> 원</td>
+        </tr>
+    </table>
+
+    <table class="main-table">
+        <tr>
+            
+            <th>차변 잔액</th>
+            
+            <th>차변 합계</th>
+            
+            <th>계정과목</th>
+            
+            <th>대변 합계</th>
+            
+            <th>대변 잔액</th>
+            
+        </tr>
+        
+        <tr>
+            <td>15,236,793,272</td>
+            <td>105,546,013,588</td>
+            <td class="acct-name">< 유 동 자 산 ></td>
+            <td>90,309,220,316</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>13,338,572,304</td>
+            <td>80,714,013,984</td>
+            <td class="acct-name">< 당 좌 자 산 ></td>
+            <td>67,375,441,680</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>6,468,619,286</td>
+            <td>39,723,839,630</td>
+            <td class="acct-name">현금및현금성자산</td>
+            <td>33,255,220,344</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>2,000,000,000</td>
+            <td>2,500,000,000</td>
+            <td class="acct-name">단기금융상품</td>
+            <td>500,000,000</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">단기투자증권</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>34,085,479</td>
+            <td>51,147,796</td>
+            <td class="acct-name">단기대여금</td>
+            <td>17,062,317</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>4,489,692,732</td>
+            <td>37,406,348,443</td>
+            <td class="acct-name">매출채권</td>
+            <td>32,916,655,711</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>160,402,560</td>
+            <td>455,133,540</td>
+            <td class="acct-name">선급금</td>
+            <td>294,730,980</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>127,574,244</td>
+            <td>417,053,442</td>
+            <td class="acct-name">미수금</td>
+            <td>289,479,198</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>58,198,003</td>
+            <td>160,491,133</td>
+            <td class="acct-name">선급비용</td>
+            <td>102,293,130</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>1,898,220,968</td>
+            <td>24,831,999,604</td>
+            <td class="acct-name">< 재 고 자 산 ></td>
+            <td>22,933,778,636</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>1,263,556,014</td>
+            <td>17,176,232,154</td>
+            <td class="acct-name">상품</td>
+            <td>15,912,676,140</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>234,053,982</td>
+            <td>3,940,366,703</td>
+            <td class="acct-name">제품</td>
+            <td>3,706,312,721</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">반제품및재공품</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>212,607,752</td>
+            <td>2,292,506,802</td>
+            <td class="acct-name">원재료</td>
+            <td>2,079,899,050</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">부재료</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>188,003,220</td>
+            <td>1,422,893,945</td>
+            <td class="acct-name">미착상품(미착재료)</td>
+            <td>1,234,890,725</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">건설용지</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">완성건물</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">미성공사</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>1,591,716,818</td>
+            <td>1,622,861,239</td>
+            <td class="acct-name">< 비 유 동 자 산 ></td>
+            <td>31,144,421</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>500,000,000</td>
+            <td>500,000,000</td>
+            <td class="acct-name">< 투 자 자 산 ></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기금융상품</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>500,000,000</td>
+            <td>500,000,000</td>
+            <td class="acct-name">장기투자증권</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기대여금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>552,370,664</td>
+            <td>567,968,612</td>
+            <td class="acct-name">< 유 형 자 산 ></td>
+            <td>15,597,948</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">토지</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">건물</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>169,589,876</td>
+            <td>169,589,876</td>
+            <td class="acct-name">구축물(시설장치)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>126,524,935</td>
+            <td>126,524,935</td>
+            <td class="acct-name">기계장치</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">선박</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">건설용장비</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>123,163,017</td>
+            <td>135,345,639</td>
+            <td class="acct-name">차량운반구</td>
+            <td>12,182,622</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>66,379,918</td>
+            <td>66,379,918</td>
+            <td class="acct-name">공구및기구</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>66,712,918</td>
+            <td>70,128,244</td>
+            <td class="acct-name">비품</td>
+            <td>3,415,326</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">건설중인자산</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>137,994,079</td>
+            <td>152,201,779</td>
+            <td class="acct-name">< 무 형 자 산 ></td>
+            <td>14,207,700</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">영업권</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>38,150,305</td>
+            <td>43,575,661</td>
+            <td class="acct-name">산업재산권(특허권,상표권등)</td>
+            <td>5,425,356</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>43,908,573</td>
+            <td>44,932,901</td>
+            <td class="acct-name">개발비</td>
+            <td>1,024,328</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>55,935,201</td>
+            <td>63,693,217</td>
+            <td class="acct-name">기타</td>
+            <td>7,758,016</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>401,352,075</td>
+            <td>402,690,848</td>
+            <td class="acct-name">< 기 타 비 유 동 자 산 ></td>
+            <td>1,338,773</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기매출채권</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기선급금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기미수금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>380,000,000</td>
+            <td>380,000,000</td>
+            <td class="acct-name">임차보증금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>21,352,075</td>
+            <td>22,690,848</td>
+            <td class="acct-name">기타보증금</td>
+            <td>1,338,773</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>28,067,469,229</td>
+            <td class="acct-name">< 유 동 부 채 ></td>
+            <td>33,751,863,431</td>
+            <td>5,684,394,202</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>2,000,000,000</td>
+            <td class="acct-name">단기차입금</td>
+            <td>4,500,000,000</td>
+            <td>2,500,000,000</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>19,696,518,697</td>
+            <td class="acct-name">매입채무</td>
+            <td>21,598,644,818</td>
+            <td>1,902,126,121</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>263,661,743</td>
+            <td class="acct-name">선수금</td>
+            <td>365,410,898</td>
+            <td>101,749,155</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>2,967,021,092</td>
+            <td class="acct-name">미지급금</td>
+            <td>3,483,391,194</td>
+            <td>516,370,102</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>1,032,141,119</td>
+            <td class="acct-name">예수금</td>
+            <td>1,107,876,690</td>
+            <td>75,735,571</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>1,708,126,578</td>
+            <td class="acct-name">미지급비용</td>
+            <td>1,896,539,831</td>
+            <td>188,413,253</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>400,000,000</td>
+            <td class="acct-name">유동성장기부채</td>
+            <td>800,000,000</td>
+            <td>400,000,000</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">유동성충당부채</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>125,923,903</td>
+            <td class="acct-name">< 비 유 동 부 채 ></td>
+            <td>4,644,235,367</td>
+            <td>4,518,311,464</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기차입금</td>
+            <td>3,200,000,000</td>
+            <td>3,200,000,000</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기매입채무</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기선수금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">장기미지급금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">임대보증금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타보증금</td>
+            <td>60,000,000</td>
+            <td>60,000,000</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>125,923,903</td>
+            <td class="acct-name">퇴직급여충당부채</td>
+            <td>1,384,235,367</td>
+            <td>1,258,311,464</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타충당부채</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">제준비금</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">기타</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">< 자 본 ></td>
+            <td>3,831,250,174</td>
+            <td>3,831,250,174</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">< 손 익 ></td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>126,968,922</td>
+            <td class="acct-name">매출액</td>
+            <td>31,869,199,547</td>
+            <td>31,742,230,625</td>
+        </tr>
+        
+        <tr>
+            <td>15,856,298,591</td>
+            <td>15,856,298,591</td>
+            <td class="acct-name">상품매출원가</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>4,224,365,097</td>
+            <td>4,224,365,097</td>
+            <td class="acct-name">제조ㆍ공사ㆍ분양ㆍ기타원가</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>8,729,113,421</td>
+            <td>8,746,571,647</td>
+            <td class="acct-name">판매비와관리비</td>
+            <td>17,458,226</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">영업외수익</td>
+            <td>168,472,524</td>
+            <td>168,472,524</td>
+        </tr>
+        
+        <tr>
+            <td>306,371,790</td>
+            <td>306,371,790</td>
+            <td class="acct-name">영업외비용</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td class="acct-name">당기순손익</td>
+            <td></td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>45,944,658,989</td>
+            <td>164,622,844,006</td>
+            <td class="acct-name">합 계</td>
+            <td>164,622,844,006</td>
+            <td>45,944,658,989</td>
+        </tr>
+        
+    </table>
+
+    <div class="footer-box">
+        <p><strong>[작성 정보 및 결재 라인]</strong></p>
+        <p>- 작성: 재무회계팀 서하윤 사원</p>
+        <p>- 검토/결재: 박수진 팀장 → 오태석 상무 → 한상훈 대표이사</p>
+        <p class="highlight">- (참고) 당기순손익(손익 차대차액): 2,794,554,250 원</p>
+    </div>
+
+</body>
+</html>

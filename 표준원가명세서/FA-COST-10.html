@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)표준 원가명세서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 20px; letter-spacing: 5px; }
+        .base-date { text-align: right; font-size: 12px; margin-bottom: 10px; }
+        .header-table { width: 100%; margin-bottom: 20px; border: none; font-size: 13px; }
+        .header-table td { padding: 5px; border: none; }
+        h3 { font-size: 15px; border-left: 4px solid #285473; padding-left: 10px; color: #285473; margin-top: 30px; margin-bottom: 10px; }
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .main-table th, .main-table td { border: 1px solid #ccc; padding: 8px; }
+        .main-table th { background-color: #f4f6f8; text-align: center; font-weight: bold; }
+        .col-title { text-align: left; padding-left: 10px; }
+        .col-code { text-align: center; color: #666; width: 10%; }
+        .col-amt { text-align: right; font-family: 'Courier New', Courier, monospace; width: 25%; font-weight: bold;}
+        .empty-notice { text-align: left; padding: 10px; color: #888; border: 1px dashed #ccc; background-color: #fafafa; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ 소득세법 시행규칙 [별지 제40호의8서식] <개정 2014.3.14></div>
+    <h1>표준원가명세서</h1>
+    <div class="base-date">단위: 원</div>
+
+    <table class="header-table">
+        <tr>
+            <td style="width: 50%;"><strong>상호:</strong> (주)에이치에스리테일<br><strong>사업자등록번호:</strong> 215-87-45128</td>
+            <td style="width: 50%; text-align: right;"><strong>과세기간:</strong><br>2026.01.01. 부터 2026.06.30. 까지</td>
+        </tr>
+    </table>
+
+    
+        <!-- 헤더 섹션은 위에서 처리했으므로 건너뜀 -->
+        
+    
+        <!-- 헤더 섹션은 위에서 처리했으므로 건너뜀 -->
+        
+            <h3>1. 제조원가 명세서 - 제조업 (PB상품: 오트바이트·HS 착즙주스 등 (주)제일식품 외 OEM 사급 생산)</h3>
+            
+            <!-- 표(Table) 형태인 경우 -->
+            
+                
+                    <table class="main-table">
+                        <tr>
+                            
+                                <th>계정과목</th>
+                            
+                                <th>코드</th>
+                            
+                                <th>금액</th>
+                            
+                        </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅰ. 재료비</td>
+                                <td class="col-code">01</td>
+                                <td class="col-amt">1,677,601,849</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 기초재료재고액</td>
+                                <td class="col-code">02</td>
+                                <td class="col-amt">292,934,223</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 당기재료매입액</td>
+                                <td class="col-code">03</td>
+                                <td class="col-amt">1,716,791,675</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 기말재료재고액</td>
+                                <td class="col-code">04</td>
+                                <td class="col-amt">325,564,424</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 타계정대체액</td>
+                                <td class="col-code">05</td>
+                                <td class="col-amt">6,559,625</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅱ. 노무비</td>
+                                <td class="col-code">06</td>
+                                <td class="col-amt">122,007,407</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 급여와 임금ㆍ제수당</td>
+                                <td class="col-code">07</td>
+                                <td class="col-amt">104,926,370</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 일용급여</td>
+                                <td class="col-code">08</td>
+                                <td class="col-amt">4,880,296</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 퇴직급여 (충당부채전입액 포함)</td>
+                                <td class="col-code">09</td>
+                                <td class="col-amt">8,540,518</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 기타</td>
+                                <td class="col-code">10</td>
+                                <td class="col-amt">3,660,223</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅲ. 경비</td>
+                                <td class="col-code">11</td>
+                                <td class="col-amt">1,256,618,312</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 전력비</td>
+                                <td class="col-code">12</td>
+                                <td class="col-amt">11,804,627</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 가스ㆍ수도ㆍ유류비</td>
+                                <td class="col-code">13</td>
+                                <td class="col-amt">5,849,232</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 운반비</td>
+                                <td class="col-code">14</td>
+                                <td class="col-amt">87,666,102</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 감가상각비</td>
+                                <td class="col-code">15</td>
+                                <td class="col-amt">18,220,016</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">5. 무형자산상각비</td>
+                                <td class="col-code">16</td>
+                                <td class="col-amt">2,950,666</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">6. 수선비</td>
+                                <td class="col-code">17</td>
+                                <td class="col-amt">4,431,235</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">7. 소모품비</td>
+                                <td class="col-code">18</td>
+                                <td class="col-amt">12,421,077</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">8. 세금과공과</td>
+                                <td class="col-code">19</td>
+                                <td class="col-amt">6,165,219</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">9. 임차료</td>
+                                <td class="col-code">20</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">10. 보험료</td>
+                                <td class="col-code">21</td>
+                                <td class="col-amt">8,844,471</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">11. 복리후생비</td>
+                                <td class="col-code">22</td>
+                                <td class="col-amt">12,341,897</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">12. 여비교통비</td>
+                                <td class="col-code">23</td>
+                                <td class="col-amt">9,484,088</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">13. 통신비</td>
+                                <td class="col-code">24</td>
+                                <td class="col-amt">1,514,064</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">14. 접대비</td>
+                                <td class="col-code">25</td>
+                                <td class="col-amt">2,558,143</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">15. 차량유지비</td>
+                                <td class="col-code">26</td>
+                                <td class="col-amt">3,556,928</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">16. 외주가공비</td>
+                                <td class="col-code">27</td>
+                                <td class="col-amt">950,617,422</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">17. 지급수수료</td>
+                                <td class="col-code">28</td>
+                                <td class="col-amt">37,044,952</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">18. 도서인쇄비</td>
+                                <td class="col-code">29</td>
+                                <td class="col-amt">1,253,761</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">19. 경상개발비</td>
+                                <td class="col-code">30</td>
+                                <td class="col-amt">31,406,421</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">20. 포장비</td>
+                                <td class="col-code">31</td>
+                                <td class="col-amt">130,418,806</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">21. 기타 소계 (①+②+③+④)</td>
+                                <td class="col-code">32</td>
+                                <td class="col-amt">-81,930,815</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">① 품질검사비</td>
+                                <td class="col-code">33</td>
+                                <td class="col-amt">-45,061,948</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">② 금형유지비</td>
+                                <td class="col-code">34</td>
+                                <td class="col-amt">-24,579,244</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">③ 잡비</td>
+                                <td class="col-code">35</td>
+                                <td class="col-amt">-12,289,623</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">④ 기타</td>
+                                <td class="col-code">36</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅳ. 당기총제조비용 (Ⅰ+Ⅱ+Ⅲ)</td>
+                                <td class="col-code">37</td>
+                                <td class="col-amt">3,056,227,568</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅴ. 기초재공품원가</td>
+                                <td class="col-code">38</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅵ. 합계 (Ⅳ+Ⅴ)</td>
+                                <td class="col-code">39</td>
+                                <td class="col-amt">3,056,227,568</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅶ. 기말재공품원가</td>
+                                <td class="col-code">40</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅷ. 타계정대체액</td>
+                                <td class="col-code">41</td>
+                                <td class="col-amt">6,042,387</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅸ. 당기제품제조원가 (Ⅵ-Ⅶ-Ⅷ)</td>
+                                <td class="col-code">42</td>
+                                <td class="col-amt">3,050,185,181</td>
+                            </tr>
+                        
+                    </table>
+                
+                
+            <!-- 필드(단순 텍스트/비고) 형태인 경우 -->
+            
+            
+        
+    
+        <!-- 헤더 섹션은 위에서 처리했으므로 건너뜀 -->
+        
+            <h3>2. 공사원가 명세서 - 건설업</h3>
+            
+            <!-- 표(Table) 형태인 경우 -->
+            
+                <div class="empty-notice">해당없음 (공란)</div>
+            
+            
+        
+    
+        <!-- 헤더 섹션은 위에서 처리했으므로 건너뜀 -->
+        
+            <h3>3. 분양원가 명세서 - 건설업 및 부동산매매업</h3>
+            
+            <!-- 표(Table) 형태인 경우 -->
+            
+                <div class="empty-notice">해당없음 (공란)</div>
+            
+            
+        
+    
+        <!-- 헤더 섹션은 위에서 처리했으므로 건너뜀 -->
+        
+            <h3>4. 기타원가 명세서 - HS커피 강남테헤란점(직영) 음료·디저트 제조원가</h3>
+            
+            <!-- 표(Table) 형태인 경우 -->
+            
+                
+                    <table class="main-table">
+                        <tr>
+                            
+                                <th>계정과목</th>
+                            
+                                <th>코드</th>
+                            
+                                <th>금액</th>
+                            
+                        </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅰ. 재료비</td>
+                                <td class="col-code">01</td>
+                                <td class="col-amt">124,722,280</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 기초재료재고액</td>
+                                <td class="col-code">02</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 당기재료매입액</td>
+                                <td class="col-code">03</td>
+                                <td class="col-amt">124,722,280</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 기말재료재고액</td>
+                                <td class="col-code">04</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 타계정대체액</td>
+                                <td class="col-code">05</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅱ. 노무비</td>
+                                <td class="col-code">06</td>
+                                <td class="col-amt">99,777,824</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 급여와 임금ㆍ제수당</td>
+                                <td class="col-code">07</td>
+                                <td class="col-amt">87,804,485</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 일용급여</td>
+                                <td class="col-code">08</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 퇴직급여 (충당부채전입액 포함)</td>
+                                <td class="col-code">09</td>
+                                <td class="col-amt">7,982,225</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 기타</td>
+                                <td class="col-code">10</td>
+                                <td class="col-amt">3,991,114</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅲ. 경비</td>
+                                <td class="col-code">11</td>
+                                <td class="col-amt">87,305,597</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">1. 전력비</td>
+                                <td class="col-code">12</td>
+                                <td class="col-amt">9,462,542</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">2. 가스ㆍ수도ㆍ유류비</td>
+                                <td class="col-code">13</td>
+                                <td class="col-amt">4,627,180</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">3. 운반비</td>
+                                <td class="col-code">14</td>
+                                <td class="col-amt">1,529,963</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">4. 감가상각비</td>
+                                <td class="col-code">15</td>
+                                <td class="col-amt">12,669,417</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">5. 무형자산상각비</td>
+                                <td class="col-code">16</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">6. 수선비</td>
+                                <td class="col-code">17</td>
+                                <td class="col-amt">1,853,574</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">7. 소모품비</td>
+                                <td class="col-code">18</td>
+                                <td class="col-amt">6,942,415</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">8. 세금과공과</td>
+                                <td class="col-code">19</td>
+                                <td class="col-amt">632,215</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">9. 임차료</td>
+                                <td class="col-code">20</td>
+                                <td class="col-amt">48,000,000</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">10. 보험료</td>
+                                <td class="col-code">21</td>
+                                <td class="col-amt">1,254,210</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">11. 복리후생비</td>
+                                <td class="col-code">22</td>
+                                <td class="col-amt">3,808,343</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">12. 여비교통비</td>
+                                <td class="col-code">23</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">13. 통신비</td>
+                                <td class="col-code">24</td>
+                                <td class="col-amt">634,590</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">14. 접대비</td>
+                                <td class="col-code">25</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">15. 광고선전비</td>
+                                <td class="col-code">26</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">16. 차량유지비</td>
+                                <td class="col-code">27</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">17. 외주용역비</td>
+                                <td class="col-code">28</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">18. 지급수수료</td>
+                                <td class="col-code">29</td>
+                                <td class="col-amt">6,639,589</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">19. 도서인쇄비</td>
+                                <td class="col-code">30</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">20. 경상개발비</td>
+                                <td class="col-code">31</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">21. 기타 소계 (①+②+③+④)</td>
+                                <td class="col-code">32</td>
+                                <td class="col-amt">-10,748,441</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">① 카드결제수수료</td>
+                                <td class="col-code">33</td>
+                                <td class="col-amt">-6,449,064</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">② 배달앱수수료</td>
+                                <td class="col-code">34</td>
+                                <td class="col-amt">-4,299,377</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">③</td>
+                                <td class="col-code">35</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">④ 기타</td>
+                                <td class="col-code">36</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅳ. 당기총비용 (Ⅰ+Ⅱ+Ⅲ)</td>
+                                <td class="col-code">37</td>
+                                <td class="col-amt">311,805,701</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅴ. 기초재공품원가</td>
+                                <td class="col-code">38</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅵ. 합계 (Ⅳ+Ⅴ)</td>
+                                <td class="col-code">39</td>
+                                <td class="col-amt">311,805,701</td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅶ. 기말재공품원가</td>
+                                <td class="col-code">40</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅷ. 타계정대체액</td>
+                                <td class="col-code">41</td>
+                                <td class="col-amt"></td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="col-title">Ⅸ. 당기총원가 (Ⅵ-Ⅶ-Ⅷ)</td>
+                                <td class="col-code">42</td>
+                                <td class="col-amt">311,805,701</td>
+                            </tr>
+                        
+                    </table>
+                
+                
+            <!-- 필드(단순 텍스트/비고) 형태인 경우 -->
+            
+            
+        
+    
+
+</body>
+</html>
