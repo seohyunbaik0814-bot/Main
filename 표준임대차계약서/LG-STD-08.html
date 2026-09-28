@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)표준임대차계약서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 900px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; text-align: right; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 10px; letter-spacing: 2px; }
+        .contract-type { text-align: center; font-size: 14px; font-weight: bold; margin-bottom: 30px; color: #2c3e50; }
+        
+        h3 { font-size: 15px; border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #2c3e50; }
+        
+        /* 공통 표 스타일 */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        th, td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; }
+        th { background-color: #f4f6f8; font-weight: bold; text-align: center; width: 25%; }
+        td { width: 75%; }
+        
+        /* 관리비 2단 표 스타일 */
+        .half-table th { width: 25%; }
+        .half-table td { width: 25%; }
+        
+        /* 텍스트 박스 (특약 등) */
+        .text-box { background-color: #fafafa; border: 1px dashed #999; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        
+        /* 서명부 영역 */
+        .footer-section { margin-top: 40px; border-top: 2px solid #333; padding-top: 20px; }
+        .sign-table th { width: 15%; text-align: center; background-color: #eef2f5; }
+        .sign-table td { width: 35%; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ (비즈폼)표준임대차계약서</div>
+    <h1>표준임대차계약서</h1>
+    <div class="contract-type">■보증금 있는 월세  □전세  □월세</div>
+    <p style="text-align: center; margin-bottom: 30px; font-size: 14px;">임대인(대덕로지스(주))과 임차인((주)에이치에스리테일)은 아래와 같이 임대차 계약을 체결한다</p>
+
+    <!-- 임차 상가건물의 표시 -->
+    <h3>[임차 상가건물의 표시]</h3>
+    <table>
+        <tr><th>소재지</th><td colspan="3">대전광역시 대덕구 대덕대로 1417</td></tr>
+        <tr><th>토지 지목</th><td>창고용지</td><th>토지 면적</th><td>3,320.0 ㎡</td></tr>
+        <tr><th>건물 구조ㆍ용도</th><td>일반철골조 / 창고시설</td><th>건물 면적</th><td>1,652.9 ㎡</td></tr>
+        <tr><th>임차할부분</th><td>B동 1층</td><th>면적</th><td>578.51 ㎡ (175.0평)</td></tr>
+    </table>
+
+    <!-- 제1조 보증금과 차임 및 관리비 -->
+    <h3>제1조 보증금과 차임 및 관리비</h3>
+    <table>
+        <tr><th>보증금</th><td colspan="3">금 삼천만원정(￦30,000,000)</td></tr>
+        <tr><th>계약금</th><td colspan="3">금 삼백만원정(￦3,000,000)은 계약시에 지급하고 수령함. 수령인 ( 대덕로지스(주) 대표 추인호 인)</td></tr>
+        <tr><th>중도금</th><td></td><th>잔금</th><td>금 이천칠백만원정(￦27,000,000)은 2026년 01월 30일에 지급한다</td></tr>
+        <tr><th>차임(월세)</th><td>금 이백구십만원정(￦2,900,000)은 매월 10일에 지급한다. 부가세 ■불포함 □포함</td><th>입금계좌</th><td>하나은행 628-910112-86704 (예금주: 대덕로지스(주))</td></tr>
+        <tr><th>환산보증금</th><td colspan="3">금 삼억이천만원정(￦320,000,000)</td></tr>
+    </table>
+
+    <!-- 관리비 정액 -->
+    
+    <h3>관리비 (정액인 경우)</h3>
+    <table class="half-table">
+        <tr><th>총액</th><td colspan="3"><strong>금 육십만원정(￦600,000)</strong></td></tr>
+        <tr><th>1. 일반관리비</th><td>금 삼십오만원정(￦350,000)</td><th>2. 전기료</th><td>금 이십오만원정(￦250,000)</td></tr>
+        <tr><th>3. 수도료</th><td></td><th>4. 가스 사용료</th><td></td></tr>
+        <tr><th>5. 수선ㆍ유지비</th><td></td><th>6. 청소비</th><td></td></tr>
+        <tr><th>7. 충당금</th><td></td><th>8. 기타관리비</th><td></td></tr>
+    </table>
+    
+
+    <!-- 관리비 정액 아님 -->
+    
+
+    <!-- 임대차기간 및 임차목적 -->
+    <h3>제2조 임대차기간 및 제3조 임차목적</h3>
+    <table>
+        <tr><th>인도일</th><td>2026년 02월 02일까지 임차인에게 인도</td></tr>
+        <tr><th>임대차기간</th><td>인도일로부터 2028년 02월 01일까지</td></tr>
+        <tr><th>업종(목적)</th><td>창고업(상온 음료·스낵 보관)</td></tr>
+    </table>
+
+    <!-- 중개보수 -->
+    <h3>제11조 중개보수</h3>
+    <table>
+        <tr><th>요율</th><td>거래가액의 0.9%</td><th>금액</th><td>2,880,000원 (부가세 ■불포함 □포함)</td></tr>
+        <tr><th>부담</th><td colspan="3">임대인과 임차인이 각각 부담</td></tr>
+    </table>
+
+    <!-- 특약사항 -->
+    <h3>특약사항</h3>
+    <div class="text-box">
+        <p><strong>[조정 관련]</strong> 위원회 선신청: ■동의 / □부동의 / 임대인 성실응대: ■동의 / □부동의</p>
+        <p><strong>[해지권 관련]</strong> 감염병 집합제한 3개월 이상 폐업 시 해지: ■동의 / □부동의</p>
+        <p><strong>[연체 관련]</strong> 감염병 집합금지 기간 차임 연체 미간주: ■동의 / □부동의</p>
+        <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+        <strong>[기타 특약]</strong><br>
+        1. 계약 개시 후 6개월 이내 물동량 미달 시 임차인은 3개월 전 통지로 중도해지할 수 있다.<br>2. 임대인은 지게차 1대를 무상 대여한다.
+    </div>
+
+    <!-- 서명부 -->
+    <div class="footer-section">
+        <div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 20px;">
+            계약일자: 2026년 01월 12일
+        </div>
+        
+        <table class="sign-table">
+            <tr>
+                <th rowspan="2">임대인</th>
+                <th>주소</th><td colspan="3">대전광역시 대덕구 대덕대로 1417</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>160111-0551843</td>
+                <th>성명/전화</th><td>대덕로지스(주) (서명 또는 날인) / 042-933-8100</td>
+            </tr>
+            <tr>
+                <th rowspan="2">임차인</th>
+                <th>주소</th><td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워 7층</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>110111-6734521</td>
+                <th>성명/전화</th><td>(주)에이치에스리테일 대표이사 한상훈 (서명 또는 날인) / 02-6952-7700</td>
+            </tr>
+            <tr>
+                <th rowspan="2">개업공인중개사</th>
+                <th>사무소명/소재지</th><td colspan="3">대덕테크노공인중개사사무소 / 대전광역시 유성구 테크노중앙로 60, 1층</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>30200-2021-00172</td>
+                <th>대표/전화</th><td>길현숙 (서명 및 날인) / 042-936-4400</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

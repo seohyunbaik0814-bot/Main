@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)거래처 매입매출현황 분석표</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 1000px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #bbbbbb; margin-bottom: 5px; }
+        h1 { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px; letter-spacing: 2px; }
+        
+        /* 상단 문서 정보 및 결재란 컨테이너 */
+        .header-container { display: flex; justify-content: space-between; margin-bottom: 30px; align-items: flex-end; }
+        
+        /* 문서 정보 테이블 */
+        .info-table { border-collapse: collapse; font-size: 12px; }
+        .info-table th, .info-table td { padding: 4px 8px; text-align: left; }
+        .info-table th { font-weight: bold; width: 80px; }
+        
+        /* 결재란 테이블 */
+        .approval-table { border-collapse: collapse; font-size: 12px; text-align: center; }
+        .approval-table th, .approval-table td { border: 1px solid #333; width: 80px; }
+        .approval-table th { background-color: #f4f6f8; padding: 5px; }
+        .approval-table td { height: 60px; vertical-align: bottom; padding-bottom: 5px; }
+        
+        h3 { font-size: 15px; border-left: 4px solid #0056b3; padding-left: 8px; margin-top: 30px; margin-bottom: 10px; color: #0056b3; }
+        
+        /* 메인 데이터 표 */
+        .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .data-table th, .data-table td { border: 1px solid #ccc; padding: 8px; font-size: 11px; vertical-align: middle; text-align: center; }
+        .data-table th { background-color: #f4f6f8; font-weight: bold; }
+        .data-table td.col-item { text-align: left; font-weight: bold; background-color: #fafafa; }
+        /* 숫자가 들어가는 칸은 우측 정렬 */
+        .data-table td.amt { text-align: right; font-family: 'Courier New', Courier, monospace; letter-spacing: 0.5px; }
+        /* 합계 행 스타일 */
+        .data-table tr:last-child td { background-color: #eef2f5; font-weight: bold; }
+        
+        /* 참고 표 */
+        .ref-table { width: 50%; border-collapse: collapse; margin-bottom: 20px; font-size: 12px; }
+        .ref-table th, .ref-table td { border: 1px solid #ccc; padding: 6px; }
+        .ref-table th { background-color: #f4f6f8; font-weight: bold; text-align: center; }
+        .ref-table td:first-child { font-weight: bold; background-color: #fafafa; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ (비즈폼)거래처 매입매출현황 분석표</div>
+    <h1>거래처 매입매출현황 분석표</h1>
+
+    <div class="header-container">
+        <!-- 문서 정보 -->
+        <table class="info-table">
+            <tr><th>분석 대상 :</th><td>2025년 3분기 주요 거래처</td></tr>
+            <tr><th>분석 기간 :</th><td>2025.07.01 ~ 2025.09.30</td></tr>
+            <tr><th>작성 부서 :</th><td>영업기획팀</td></tr>
+            <tr><th>단위 :</th><td>원</td></tr>
+        </table>
+        
+        <!-- 결재란 -->
+        <table class="approval-table">
+            <tr>
+                
+                    <th>담당자</th>
+                
+                    <th>과 장</th>
+                
+                    <th>부서장</th>
+                
+                    <th>대표이사</th>
+                
+            </tr>
+            <tr>
+                
+                    <td>노은비 주임</td>
+                
+                    <td></td>
+                
+                    <td>김도윤 팀장</td>
+                
+                    <td>한상훈</td>
+                
+            </tr>
+        </table>
+    </div>
+
+    
+        
+    
+        
+    
+        
+            <h3>거래처별 매입/매출/순이익 상세 현황</h3>
+            <table class="data-table">
+                <tr>
+                    
+                        <th>거래처명</th>
+                    
+                        <th>매입 금액</th>
+                    
+                        <th>매입 비율</th>
+                    
+                        <th>매입 전년대비증감률</th>
+                    
+                        <th>매출 금액</th>
+                    
+                        <th>매출 비율</th>
+                    
+                        <th>매출 전년대비증감률</th>
+                    
+                        <th>순이익 금액</th>
+                    
+                        <th>순이익 기여도</th>
+                    
+                        <th>순이익 전년대비증감률</th>
+                    
+                </tr>
+                
+                    <tr>
+                        <td class="col-item">CU편의점(납품 벤더 경유)</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">652,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">27.6%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+16.2%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">1,640,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">28.1%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+4.0%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">988,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">28.5%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+25.8%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">이마트</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">466,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">19.7%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-5.3%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">1,158,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">19.9%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-1.5%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">692,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">20.0%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-13.0%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">(주)에브리데이리테일</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">448,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">19.0%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-8.8%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">1,096,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">18.8%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+13.9%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">648,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">18.7%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-9.6%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">(주)데일리24</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">362,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">15.3%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+9.1%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">892,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">15.3%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+5.1%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">530,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">15.3%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-4.3%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">HS커피 가맹점(전체)</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">252,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">10.7%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-10.7%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">627,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">10.8%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+13.6%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">375,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">10.8%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">-2.7%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">(주)굿모닝마트</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">184,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">7.8%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+19.4%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">418,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">7.2%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+12.3%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">234,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">6.7%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+25.9%</td>
+                        
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">합  계</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">2,364,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">100%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+6.5%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">5,831,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">100%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+10.4%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">3,467,000,000</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">100%</td>
+                        
+                            <!-- 쉼표나 %가 포함된 데이터는 우측 정렬 클래스 적용 -->
+                            <td class="amt">+4.4%</td>
+                        
+                    </tr>
+                
+            </table>
+            
+        
+    
+
+</body>
+</html>

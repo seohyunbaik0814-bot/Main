@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)표준임대차계약서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 900px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; text-align: right; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 10px; letter-spacing: 2px; }
+        .contract-type { text-align: center; font-size: 14px; font-weight: bold; margin-bottom: 30px; color: #2c3e50; }
+        
+        h3 { font-size: 15px; border-left: 5px solid #2c3e50; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #2c3e50; }
+        
+        /* 공통 표 스타일 */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        th, td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; }
+        th { background-color: #f4f6f8; font-weight: bold; text-align: center; width: 25%; }
+        td { width: 75%; }
+        
+        /* 관리비 2단 표 스타일 */
+        .half-table th { width: 25%; }
+        .half-table td { width: 25%; }
+        
+        /* 텍스트 박스 (특약 등) */
+        .text-box { background-color: #fafafa; border: 1px dashed #999; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+        
+        /* 서명부 영역 */
+        .footer-section { margin-top: 40px; border-top: 2px solid #333; padding-top: 20px; }
+        .sign-table th { width: 15%; text-align: center; background-color: #eef2f5; }
+        .sign-table td { width: 35%; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ (비즈폼)표준임대차계약서</div>
+    <h1>표준임대차계약서</h1>
+    <div class="contract-type">■보증금 있는 월세  □전세  □월세</div>
+    <p style="text-align: center; margin-bottom: 30px; font-size: 14px;">임대인((주)송파부동산개발)과 임차인((주)에이치에스리테일)은 아래와 같이 임대차 계약을 체결한다</p>
+
+    <!-- 임차 상가건물의 표시 -->
+    <h3>[임차 상가건물의 표시]</h3>
+    <table>
+        <tr><th>소재지</th><td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워</td></tr>
+        <tr><th>토지 지목</th><td>대</td><th>토지 면적</th><td>2,980.5 ㎡</td></tr>
+        <tr><th>건물 구조ㆍ용도</th><td>철골철근콘크리트조 / 업무시설</td><th>건물 면적</th><td>42,118.6 ㎡</td></tr>
+        <tr><th>임차할부분</th><td>7층 전부</td><th>면적</th><td>1,487.60 ㎡ (450.0평)</td></tr>
+    </table>
+
+    <!-- 제1조 보증금과 차임 및 관리비 -->
+    <h3>제1조 보증금과 차임 및 관리비</h3>
+    <table>
+        <tr><th>보증금</th><td colspan="3">금 삼억원정(￦300,000,000)</td></tr>
+        <tr><th>계약금</th><td colspan="3">금 삼천만원정(￦30,000,000)은 계약시에 지급하고 수령함. 수령인 ( (주)송파부동산개발 대표 여상욱 인)</td></tr>
+        <tr><th>중도금</th><td>금 일억이천만원정(￦120,000,000)은 2021년 02월 26일에 지급</td><th>잔금</th><td>금 일억오천만원정(￦150,000,000)은 2021년 03월 26일에 지급한다</td></tr>
+        <tr><th>차임(월세)</th><td>금 삼천삼백만원정(￦33,000,000)은 매월 25일에 지급한다. 부가세 ■불포함 □포함</td><th>입금계좌</th><td>신한은행 140-012-907733 (예금주: (주)송파부동산개발)</td></tr>
+        <tr><th>환산보증금</th><td colspan="3">금 삼십육억원정(￦3,600,000,000)</td></tr>
+    </table>
+
+    <!-- 관리비 정액 -->
+    
+    <h3>관리비 (정액인 경우)</h3>
+    <table class="half-table">
+        <tr><th>총액</th><td colspan="3"><strong>금 일천이백이십만원정(￦12,200,000)</strong></td></tr>
+        <tr><th>1. 일반관리비</th><td>금 육백이십만원정(￦6,200,000)</td><th>2. 전기료</th><td>금 이백팔십만원정(￦2,800,000)</td></tr>
+        <tr><th>3. 수도료</th><td>금 삼십만원정(￦300,000)</td><th>4. 가스 사용료</th><td></td></tr>
+        <tr><th>5. 수선ㆍ유지비</th><td>금 육십만원정(￦600,000)</td><th>6. 청소비</th><td>금 일백사십만원정(￦1,400,000)</td></tr>
+        <tr><th>7. 충당금</th><td>금 구십만원정(￦900,000)</td><th>8. 기타관리비</th><td></td></tr>
+    </table>
+    
+
+    <!-- 관리비 정액 아님 -->
+    
+
+    <!-- 임대차기간 및 임차목적 -->
+    <h3>제2조 임대차기간 및 제3조 임차목적</h3>
+    <table>
+        <tr><th>인도일</th><td>2021년 03월 29일까지 임차인에게 인도</td></tr>
+        <tr><th>임대차기간</th><td>인도일로부터 2026년 03월 28일까지</td></tr>
+        <tr><th>업종(목적)</th><td>사무실(본사 업무시설)</td></tr>
+    </table>
+
+    <!-- 중개보수 -->
+    <h3>제11조 중개보수</h3>
+    <table>
+        <tr><th>요율</th><td>거래가액의 0.9%</td><th>금액</th><td>32,400,000원 (부가세 ■불포함 □포함)</td></tr>
+        <tr><th>부담</th><td colspan="3">임대인과 임차인이 각각 부담</td></tr>
+    </table>
+
+    <!-- 특약사항 -->
+    <h3>특약사항</h3>
+    <div class="text-box">
+        <p><strong>[조정 관련]</strong> 위원회 선신청: ■동의 / □부동의 / 임대인 성실응대: ■동의 / □부동의</p>
+        <p><strong>[해지권 관련]</strong> 감염병 집합제한 3개월 이상 폐업 시 해지: ■동의 / □부동의</p>
+        <p><strong>[연체 관련]</strong> 감염병 집합금지 기간 차임 연체 미간주: ■동의 / □부동의</p>
+        <hr style="border: 0; border-top: 1px dashed #ccc; margin: 15px 0;">
+        <strong>[기타 특약]</strong><br>
+        1. 임차인은 7층 내부에 회의실·서버실을 설치할 수 있으며, 서버실 전용 항온항습기 전원 증설을 허용한다.<br>2. 지하 주차장 12면을 무상 제공하고, 추가 주차는 면당 월 150,000원으로 한다.<br>3. 임차인은 건물 외벽 사인물(HS리테일 CI) 1개소를 설치할 수 있다.
+    </div>
+
+    <!-- 서명부 -->
+    <div class="footer-section">
+        <div style="text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 20px;">
+            계약일자: 2021년 01월 18일
+        </div>
+        
+        <table class="sign-table">
+            <tr>
+                <th rowspan="2">임대인</th>
+                <th>주소</th><td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워 15층</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>110111-4412738</td>
+                <th>성명/전화</th><td>(주)송파부동산개발 (서명 또는 날인) / 02-6952-1500</td>
+            </tr>
+            <tr>
+                <th rowspan="2">임차인</th>
+                <th>주소</th><td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워 7층</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>110111-6734521</td>
+                <th>성명/전화</th><td>(주)에이치에스리테일 대표이사 한상훈 (서명 또는 날인) / 02-6952-7700</td>
+            </tr>
+            <tr>
+                <th rowspan="2">개업공인중개사</th>
+                <th>사무소명/소재지</th><td colspan="3">법조타운부동산공인중개사사무소 / 서울특별시 송파구 법원로 114, 1층</td>
+            </tr>
+            <tr>
+                <th>등록번호</th><td>11710-2017-00388</td>
+                <th>대표/전화</th><td>배영철 (서명 및 날인) / 02-400-3355</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
