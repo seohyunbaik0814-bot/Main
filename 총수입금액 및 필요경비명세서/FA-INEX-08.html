@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)총수입금액 및 필요경비명세서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 900px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 20px; letter-spacing: 3px; }
+        .year-label { text-align: center; font-size: 16px; margin-bottom: 30px; font-weight: bold; }
+        .info-box { border: 1px solid #333; padding: 15px; margin-bottom: 20px; }
+        .info-box table { width: 100%; border: none; }
+        .info-box td { padding: 5px; }
+        h3 { font-size: 15px; border-left: 4px solid #333; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; }
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .main-table th, .main-table td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; }
+        .main-table th { background-color: #f4f6f8; text-align: center; font-weight: bold; font-size: 12px; }
+        .col-item { text-align: left; background-color: #fafafa; font-weight: bold; width: 32%; padding-left: 10px; }
+        .col-amt { text-align: right; font-family: 'Courier New', Courier, monospace; letter-spacing: 0.5px; }
+        
+        /* 특정 주요 항목 행 하이라이트 */
+        .highlight-row td { background-color: #eef2f5; font-weight: bold; }
+        .result-box { border: 2px solid #0056b3; padding: 15px; text-align: right; font-size: 14px; background-color: #f9fbff; font-weight: bold; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ 소득세법 시행규칙 [별지 제74호서식 부표] <개정 2023. 3. 20.></div>
+    <h1>총수입금액 및 필요경비명세서</h1>
+    <div class="year-label">(2025년 귀속)</div>
+
+    <div class="info-box">
+        <table>
+            <tr>
+                <td style="width: 15%;"><strong>③성명:</strong></td>
+                <td style="width: 35%;">한상훈 ((주)에이치에스리테일 대표이사)</td>
+                <td style="width: 15%;"><strong>④생년월일:</strong></td>
+                <td style="width: 35%;">1976.08.14</td>
+            </tr>
+            <tr>
+                <td><strong>①주소지:</strong></td>
+                <td colspan="3">서울특별시 송파구 올림픽로 435, 115동 1402호</td>
+            </tr>
+            <tr>
+                <td><strong>②전화번호:</strong></td>
+                <td colspan="3">010-5218-7730</td>
+            </tr>
+        </table>
+    </div>
+
+    
+        
+            <h3>사업장 정보(열별)</h3>
+            <table class="main-table">
+                <tr>
+                    
+                        <th>항목</th>
+                    
+                        <th>1열: 본사(도매·PB·가맹)</th>
+                    
+                        <th>2열: HS커피 강남테헤란점</th>
+                    
+                        <th>3열: 사업소득 합계</th>
+                    
+                        <th>4열</th>
+                    
+                </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑤ 소재지</td>
+                        <td class="col-amt">서울특별시 송파구 법원로 128, 에이치에스타워 7층</td>
+                        <td class="col-amt">서울특별시 강남구 테헤란로 456, 1층</td>
+                        <td class="col-amt">-</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑥ 업종</td>
+                        <td class="col-amt">도매 및 소매업 / 음·식료품 도매</td>
+                        <td class="col-amt">숙박 및 음식점업 / 커피전문점</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑦ 주업종코드</td>
+                        <td class="col-amt">513220</td>
+                        <td class="col-amt">552301</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑧ 사업자등록번호</td>
+                        <td class="col-amt">215-87-45128</td>
+                        <td class="col-amt">220-85-63017</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑨ 과세기간</td>
+                        <td class="col-amt">2025.01.01부터 2025.12.31까지</td>
+                        <td class="col-amt">2025.01.01부터 2025.12.31까지</td>
+                        <td class="col-amt">2025.01.01부터 2025.12.31까지</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑩ 소득종류</td>
+                        <td class="col-amt">(40) 사업소득</td>
+                        <td class="col-amt">(40) 사업소득</td>
+                        <td class="col-amt">(40)</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+            </table>
+        
+    
+        
+            <h3>수입금액 및 필요경비(열별 금액)</h3>
+            <table class="main-table">
+                <tr>
+                    
+                        <th>항목</th>
+                    
+                        <th>1열: 본사</th>
+                    
+                        <th>2열: 강남테헤란점</th>
+                    
+                        <th>3열: 합계</th>
+                    
+                        <th>4열</th>
+                    
+                </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑪ 매출액</td>
+                        <td class="col-amt">43,221,655,650</td>
+                        <td class="col-amt">1,803,214,500</td>
+                        <td class="col-amt">45,024,870,150</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑫ 기타</td>
+                        <td class="col-amt">242,897,080</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">242,897,080</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+                        
+                    
+
+                    <tr class="highlight-row">
+                        <td class="col-item">⑬ 수입금액 합계(⑪+⑫)</td>
+                        <td class="col-amt">43,464,552,730</td>
+                        <td class="col-amt">1,803,214,500</td>
+                        <td class="col-amt">45,267,767,230</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑭ 기초 재고액</td>
+                        <td class="col-amt">1,865,537,210</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">1,865,537,210</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑮ 당기 상품매입액 또는 제조비용(㉔)</td>
+                        <td class="col-amt">27,701,737,020</td>
+                        <td class="col-amt">574,182,750</td>
+                        <td class="col-amt">28,275,919,770</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑯ 기말 재고액</td>
+                        <td class="col-amt">2,141,456,980</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">2,141,456,980</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+                        
+                    
+
+                    <tr class="highlight-row">
+                        <td class="col-item">⑰ 매출원가(⑭+⑮-⑯)</td>
+                        <td class="col-amt">27,425,817,250</td>
+                        <td class="col-amt">574,182,750</td>
+                        <td class="col-amt">28,000,000,000</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑱ 기초 재고액</td>
+                        <td class="col-amt">268,492,814</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">268,492,814</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑲ 당기 매입액</td>
+                        <td class="col-amt">3,028,074,252</td>
+                        <td class="col-amt">229,673,100</td>
+                        <td class="col-amt">3,257,747,352</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">⑳ 기말 재고액</td>
+                        <td class="col-amt">292,934,223</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">292,934,223</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉑ 당기 재료비(⑱+⑲-⑳)</td>
+                        <td class="col-amt">3,003,632,843</td>
+                        <td class="col-amt">229,673,100</td>
+                        <td class="col-amt">3,233,305,943</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉒ 노무비</td>
+                        <td class="col-amt">217,575,691</td>
+                        <td class="col-amt">183,738,480</td>
+                        <td class="col-amt">401,314,171</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉓ 경비</td>
+                        <td class="col-amt">2,218,183,759</td>
+                        <td class="col-amt">160,771,170</td>
+                        <td class="col-amt">2,378,954,929</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+                        
+                    
+
+                    <tr class="highlight-row">
+                        <td class="col-item">㉔ 당기제조비용(㉑+㉒+㉓)</td>
+                        <td class="col-amt">5,439,392,293</td>
+                        <td class="col-amt">574,182,750</td>
+                        <td class="col-amt">6,013,575,043</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉕ 급료</td>
+                        <td class="col-amt">5,495,028,645</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">5,495,028,645</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉖ 제세공과금</td>
+                        <td class="col-amt">144,006,640</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">144,006,640</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉗ 임차료</td>
+                        <td class="col-amt">730,466,204</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">730,466,204</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉘ 지급이자</td>
+                        <td class="col-amt">301,225,480</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">301,225,480</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉙ 접대비</td>
+                        <td class="col-amt">118,920,527</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">118,920,527</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉚ 기부금</td>
+                        <td class="col-amt">18,000,000</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">18,000,000</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉛ 감가상각비</td>
+                        <td class="col-amt">398,373,913</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">398,373,913</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉜ 차량유지비</td>
+                        <td class="col-amt">180,454,724</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">180,454,724</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉝ 지급수수료</td>
+                        <td class="col-amt">928,321,375</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">928,321,375</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉞ 소모품비</td>
+                        <td class="col-amt">92,765,657</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">92,765,657</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㉟ 복리후생비</td>
+                        <td class="col-amt">687,077,485</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">687,077,485</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㊱ 운반비</td>
+                        <td class="col-amt">1,403,463,761</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">1,403,463,761</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㊲ 광고선전비</td>
+                        <td class="col-amt">927,711,725</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">927,711,725</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㊳ 여비교통비</td>
+                        <td class="col-amt">122,866,917</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">122,866,917</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+
+                    <tr >
+                        <td class="col-item">㊴ 기타</td>
+                        <td class="col-amt">879,440,967</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">879,440,967</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+                        
+                    
+
+                    <tr class="highlight-row">
+                        <td class="col-item">㊵ 일반관리비등계(㉕~㊴의 합계)</td>
+                        <td class="col-amt">12,428,124,020</td>
+                        <td class="col-amt"></td>
+                        <td class="col-amt">12,428,124,020</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+                    <!-- 수입금액, 필요경비 합계 부분 등 주요 행 배경색 강조 -->
+                    
+                    
+                        
+                    
+
+                    <tr class="highlight-row">
+                        <td class="col-item">㊶ 필요경비 합계(⑰+㊵)</td>
+                        <td class="col-amt">39,853,941,270</td>
+                        <td class="col-amt">574,182,750</td>
+                        <td class="col-amt">40,428,124,020</td>
+                        <td class="col-amt"></td>
+                    </tr>
+                
+            </table>
+        
+    
+
+    <div class="result-box">
+        (참고) 소득금액 (⑬-㊶ 합계) : 4,839,643,210 원
+    </div>
+
+</body>
+</html>

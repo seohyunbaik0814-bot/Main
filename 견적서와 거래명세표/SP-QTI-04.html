@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)견적서와 거래명세표</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 12px; line-height: 1.5; }
+        
+        /* 공통 표 스타일 */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        th, td { border: 1px solid #777; padding: 6px; vertical-align: middle; }
+        th { background-color: #f4f6f8; text-align: center; font-weight: bold; }
+        
+        /* 헤더 박스 스타일 (공급자, 수신 등) */
+        .info-table th { width: 20%; text-align: left; padding-left: 10px; }
+        .info-table td { width: 30%; }
+        
+        /* 품목 테이블 스타일 */
+        .item-table th { text-align: center; }
+        .item-table td { text-align: center; }
+        .item-table td.col-left { text-align: left; padding-left: 10px; }
+        .item-table td.amt { text-align: right; font-family: 'Courier New', Courier, monospace; padding-right: 5px; }
+
+        /* 타이틀 */
+        .doc-header { text-align: center; font-size: 26px; font-weight: bold; letter-spacing: 5px; margin-bottom: 30px; border-bottom: 3px double #333; padding-bottom: 10px; color: #2c3e50; }
+        
+        /* 섹션 구분선 */
+        .section-divider { border-top: 2px dashed #aaa; margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================== -->
+    <!-- 1. 견 적 서 부 분 -->
+    <!-- ============================================== -->
+    <div class="doc-header">견 적 서</div>
+    
+    <table class="info-table">
+        <tr>
+            <th>수신</th>
+            <td colspan="3"><strong>행복한슈퍼 오말순 사장 귀하</strong></td>
+        </tr>
+        <tr>
+            <th>견적일 / 유효기간</th>
+            <td>2025년 06월 03일 / 견적일로부터 7일 이내</td>
+            <th>결제조건</th>
+            <td>현금 또는 계좌이체(인도 시)</td>
+        </tr>
+    </table>
+
+    <table class="info-table">
+        <tr>
+            <th rowspan="4" style="text-align: center; width: 10%;">공<br>급<br>자</th>
+            <th>등록번호</th>
+            <td colspan="3">215-87-45128</td>
+        </tr>
+        <tr>
+            <th>상호</th>
+            <td>(주)에이치에스리테일</td>
+            <th>대표</th>
+            <td>한상훈</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워 7층</td>
+        </tr>
+        <tr>
+            <th>연락처 / FAX</th>
+            <td>02-6952-7700 / 02-6952-7701</td>
+            <th>업태 / 종목</th>
+            <td>도매 및 소매업, 서비스업 / 음·식료품 도매, 가맹사업, 커피전문점</td>
+        </tr>
+    </table>
+
+    <table class="item-table">
+        <tr>
+            <th style="width: 8%;">번호</th>
+            <th style="width: 30%;">내역</th>
+            <th style="width: 15%;">규격</th>
+            <th style="width: 12%;">수량</th>
+            <th style="width: 10%;">단가</th>
+            <th style="width: 15%;">금액</th>
+            <th style="width: 10%;">세액</th>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td class="col-left">프리미엄 감자칩 오리지널</td>
+            <td>60g×20입</td>
+            <td>30 BOX</td>
+            <td class="amt">16,800</td>
+            <td class="amt">504,000</td>
+            <td class="amt">50,400</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td class="col-left">제로 콜라</td>
+            <td>500ml×20입</td>
+            <td>40 BOX</td>
+            <td class="amt">15,600</td>
+            <td class="amt">624,000</td>
+            <td class="amt">62,400</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td class="col-left">스위트 믹스 젤리</td>
+            <td>1kg</td>
+            <td>20 봉</td>
+            <td class="amt">12,000</td>
+            <td class="amt">240,000</td>
+            <td class="amt">24,000</td>
+        </tr>
+        
+        <!-- 견적서 합계 -->
+        <tr>
+            <th colspan="5">합계 (공급가액 + 세액)</th>
+            <td colspan="2" class="amt" style="font-weight: bold; color: #d9534f; text-align: center;">1,368,000 (VAT별도) / VAT포함 1,504,800</td>
+        </tr>
+    </table>
+    
+    <div style="font-size: 11px; color: #555; background-color: #f9f9f9; padding: 10px; border: 1px solid #ccc;">
+        <strong>[비고]</strong> 소량 주문, 주 1회 정기 배송 희망. 담당: (주)에이치에스리테일 영업본부 (문의 02-6952-7700)
+    </div>
+
+    <!-- ============================================== -->
+    <div class="section-divider"></div>
+    <!-- ============================================== -->
+
+    <!-- 2. 거 래 명 세 표 부 분 -->
+    <div class="doc-header">거 래 명 세 표 <span style="font-size: 14px; font-weight: normal; color: #666;">(공급받는자용)</span></div>
+
+    <div style="text-align: right; margin-bottom: 5px; font-size: 11px;">
+        No. HS-2506-0004 (6권 004호) / 거래일자: 2025년 06월 07일
+    </div>
+
+    <table class="info-table">
+        <tr>
+            <th rowspan="3" style="text-align: center; width: 10%;">공<br>급<br>자</th>
+            <th>등록번호</th>
+            <td>215-87-45128</td>
+            <th rowspan="3" style="text-align: center; width: 10%;">공급<br>받는<br>자</th>
+            <th>등록번호</th>
+            <td>119-12-47833</td>
+        </tr>
+        <tr>
+            <th>상호(성명)</th>
+            <td>(주)에이치에스리테일 (한상훈)</td>
+            <th>상호(대표)</th>
+            <td>행복한슈퍼 귀하 (오말순)</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>서울특별시 송파구 법원로 128, 에이치에스타워 7층</td>
+            <th>주소</th>
+            <td>서울특별시 관악구 봉천로 342</td>
+        </tr>
+    </table>
+
+    <table class="item-table">
+        <tr>
+            <th colspan="2">합계금액</th>
+            <td colspan="5" style="text-align: center; font-weight: bold; font-size: 14px;">일금 일백오십만사천팔백원정 (₩1,504,800)</td>
+        </tr>
+        <tr>
+            <th style="width: 8%;">번호</th>
+            <th style="width: 30%;">내역</th>
+            <th style="width: 15%;">규격</th>
+            <th style="width: 12%;">수량</th>
+            <th style="width: 10%;">단가</th>
+            <th style="width: 15%;">금액</th>
+            <th style="width: 10%;">비고</th>
+        </tr>
+        
+        <tr>
+            <td>1</td>
+            <td class="col-left">프리미엄 감자칩 오리지널</td>
+            <td>60g×20입</td>
+            <td>30 BOX</td>
+            <td class="amt">16,800</td>
+            <td class="amt">504,000</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td class="col-left">제로 콜라</td>
+            <td>500ml×20입</td>
+            <td>40 BOX</td>
+            <td class="amt">15,600</td>
+            <td class="amt">624,000</td>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td class="col-left">스위트 믹스 젤리</td>
+            <td>1kg</td>
+            <td>20 봉</td>
+            <td class="amt">12,000</td>
+            <td class="amt">240,000</td>
+            <td></td>
+        </tr>
+        
+    </table>
+
+    <!-- 정산 정보 -->
+    <table class="info-table" style="text-align: center;">
+        <tr>
+            <th style="text-align: center;">전잔금</th>
+            <th style="text-align: center;">합계</th>
+            <th style="text-align: center;">입금</th>
+            <th style="text-align: center;">잔금</th>
+            <th style="text-align: center;">인수자 확인</th>
+        </tr>
+        <tr>
+            <td class="amt">486,000</td>
+            <td class="amt">1,504,800 (VAT포함)</td>
+            <td class="amt">1,990,800</td>
+            <td class="amt">0</td>
+            <td>오말순 (인)</td>
+        </tr>
+    </table>
+
+</body>
+</html>

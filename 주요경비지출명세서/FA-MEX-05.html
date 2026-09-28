@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)주요경비지출명세서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 900px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 5px; letter-spacing: 3px; }
+        .period-info { text-align: center; font-size: 14px; margin-bottom: 30px; font-weight: bold; color: #555; }
+        
+        /* 제출자 정보 테이블 */
+        .submitter-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .submitter-table th, .submitter-table td { border: 1px solid #333; padding: 10px; text-align: center; }
+        .submitter-table th { background-color: #f4f6f8; font-weight: bold; width: 15%; }
+        .submitter-table td { width: 35%; text-align: left; padding-left: 15px; }
+
+        h3 { font-size: 16px; border-left: 4px solid #333; padding-left: 10px; margin-bottom: 10px; }
+        
+        /* 거래 내역 테이블 */
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .main-table th, .main-table td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; text-align: center; }
+        .main-table th { background-color: #f4f6f8; font-weight: bold; font-size: 12px; }
+        .col-item { text-align: left; padding-left: 10px; }
+        .col-amt { text-align: right; font-family: 'Courier New', Courier, monospace; font-weight: bold; padding-right: 10px; }
+        
+        .footer-box { border: 2px solid #333; padding: 15px; background-color: #f9f9f9; font-size: 13px; margin-top: 20px; }
+        .footer-box p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ 소득세법 시행규칙 [별지 제20호의5서식] <개정 2023. 3. 20.></div>
+    <h1>주요경비지출명세서</h1>
+    <div class="period-info">[2022년 귀속]</div>
+
+    <h3>제출자 인적사항</h3>
+    <table class="submitter-table">
+        <tr>
+            <th>상호</th>
+            <td>(주)에이치에스리테일</td>
+            <th>사업자등록번호</th>
+            <td>215-87-45128</td>
+        </tr>
+        <tr>
+            <th>성명</th>
+            <td>한상훈</td>
+            <th>주민등록번호</th>
+            <td>760814-1068214</td>
+        </tr>
+    </table>
+
+    
+        
+            <h3>주요경비지출명세 제출대상 거래내용</h3>
+            <table class="main-table">
+                <tr>
+                    
+                        <th>일련번호</th>
+                    
+                        <th>거래처(공급자) 상호(성명)</th>
+                    
+                        <th>사업자등록번호(주민등록번호)</th>
+                    
+                        <th>매수</th>
+                    
+                        <th>거래품목</th>
+                    
+                        <th>거래금액</th>
+                    
+                </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">1</td>
+                        <td class="col-item" style="width: 25%;">송파플라워 (간이과세자)</td>
+                        <td style="width: 22%;">807-01-50129</td>
+                        <td style="width: 8%;">3</td>
+                        <td class="col-item" style="width: 22%;">개업·행사 축하 화환</td>
+                        <td class="col-amt" style="width: 15%;">333,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">2</td>
+                        <td class="col-item" style="width: 25%;">동영숙 (인테리어 목공기술자)</td>
+                        <td style="width: 22%;">690325-1091477</td>
+                        <td style="width: 8%;">2</td>
+                        <td class="col-item" style="width: 22%;">직영점 목공·도장 부분 보수</td>
+                        <td class="col-amt" style="width: 15%;">698,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">3</td>
+                        <td class="col-item" style="width: 25%;">박명숙 (전기 기술자(개인))</td>
+                        <td style="width: 22%;">880317-2864750</td>
+                        <td style="width: 8%;">1</td>
+                        <td class="col-item" style="width: 22%;">쇼케이스 전원 증설 공사</td>
+                        <td class="col-amt" style="width: 15%;">706,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">4</td>
+                        <td class="col-item" style="width: 25%;">홍소율 (파렛트 수리 개인업자)</td>
+                        <td style="width: 22%;">890325-2743513</td>
+                        <td style="width: 8%;">3</td>
+                        <td class="col-item" style="width: 22%;">목재 파렛트 수리(수량 단위)</td>
+                        <td class="col-amt" style="width: 15%;">273,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">5</td>
+                        <td class="col-item" style="width: 25%;">백암철물 (간이과세자)</td>
+                        <td style="width: 22%;">395-02-50843</td>
+                        <td style="width: 8%;">6</td>
+                        <td class="col-item" style="width: 22%;">창고 랙 볼트·공구 소모품</td>
+                        <td class="col-amt" style="width: 15%;">197,000</td>
+                    </tr>
+                
+            </table>
+        
+    
+
+    <div class="footer-box">
+        <p><strong>[합계 및 작성 정보]</strong></p>
+        <p>- 거래 건수: 5건</p>
+        <p>- 거래금액 합계: <strong>2,207,000원</strong></p>
+        <p>- 작성: 재무회계팀 서하윤 / 확인 박수진 팀장</p>
+    </div>
+
+</body>
+</html>

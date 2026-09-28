@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)주요경비지출명세서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 900px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        .form-info { font-size: 11px; color: #555; margin-bottom: 5px; }
+        h1 { text-align: center; font-size: 26px; font-weight: bold; margin-bottom: 5px; letter-spacing: 3px; }
+        .period-info { text-align: center; font-size: 14px; margin-bottom: 30px; font-weight: bold; color: #555; }
+        
+        /* 제출자 정보 테이블 */
+        .submitter-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+        .submitter-table th, .submitter-table td { border: 1px solid #333; padding: 10px; text-align: center; }
+        .submitter-table th { background-color: #f4f6f8; font-weight: bold; width: 15%; }
+        .submitter-table td { width: 35%; text-align: left; padding-left: 15px; }
+
+        h3 { font-size: 16px; border-left: 4px solid #333; padding-left: 10px; margin-bottom: 10px; }
+        
+        /* 거래 내역 테이블 */
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .main-table th, .main-table td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; text-align: center; }
+        .main-table th { background-color: #f4f6f8; font-weight: bold; font-size: 12px; }
+        .col-item { text-align: left; padding-left: 10px; }
+        .col-amt { text-align: right; font-family: 'Courier New', Courier, monospace; font-weight: bold; padding-right: 10px; }
+        
+        .footer-box { border: 2px solid #333; padding: 15px; background-color: #f9f9f9; font-size: 13px; margin-top: 20px; }
+        .footer-box p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="form-info">■ 소득세법 시행규칙 [별지 제20호의5서식] <개정 2023. 3. 20.></div>
+    <h1>주요경비지출명세서</h1>
+    <div class="period-info">[2019년 귀속]</div>
+
+    <h3>제출자 인적사항</h3>
+    <table class="submitter-table">
+        <tr>
+            <th>상호</th>
+            <td>(주)에이치에스리테일</td>
+            <th>사업자등록번호</th>
+            <td>215-87-45128</td>
+        </tr>
+        <tr>
+            <th>성명</th>
+            <td>한상훈</td>
+            <th>주민등록번호</th>
+            <td>760814-1068214</td>
+        </tr>
+    </table>
+
+    
+        
+            <h3>주요경비지출명세 제출대상 거래내용</h3>
+            <table class="main-table">
+                <tr>
+                    
+                        <th>일련번호</th>
+                    
+                        <th>거래처(공급자) 상호(성명)</th>
+                    
+                        <th>사업자등록번호(주민등록번호)</th>
+                    
+                        <th>매수</th>
+                    
+                        <th>거래품목</th>
+                    
+                        <th>거래금액</th>
+                    
+                </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">1</td>
+                        <td class="col-item" style="width: 25%;">방산포장 (간이과세자)</td>
+                        <td style="width: 22%;">310-01-92439</td>
+                        <td style="width: 8%;">2</td>
+                        <td class="col-item" style="width: 22%;">행사용 선물 포장재</td>
+                        <td class="col-amt" style="width: 15%;">291,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">2</td>
+                        <td class="col-item" style="width: 25%;">탁명숙 (개인 사진작가)</td>
+                        <td style="width: 22%;">600512-1454282</td>
+                        <td style="width: 8%;">1</td>
+                        <td class="col-item" style="width: 22%;">PB 신제품 연출 사진 촬영</td>
+                        <td class="col-amt" style="width: 15%;">563,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">3</td>
+                        <td class="col-item" style="width: 25%;">손소율 (파렛트 수리 개인업자)</td>
+                        <td style="width: 22%;">611219-1275851</td>
+                        <td style="width: 8%;">2</td>
+                        <td class="col-item" style="width: 22%;">목재 파렛트 수리(수량 단위)</td>
+                        <td class="col-amt" style="width: 15%;">412,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">4</td>
+                        <td class="col-item" style="width: 25%;">명소율 (물류센터 인근 주차장 임대인)</td>
+                        <td style="width: 22%;">600313-2152871</td>
+                        <td style="width: 8%;">3</td>
+                        <td class="col-item" style="width: 22%;">대형 화물차 야간 주차장 임차료</td>
+                        <td class="col-amt" style="width: 15%;">4,668,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">5</td>
+                        <td class="col-item" style="width: 25%;">남지우 (용달 화물차주)</td>
+                        <td style="width: 22%;">870407-1008000</td>
+                        <td style="width: 8%;">6</td>
+                        <td class="col-item" style="width: 22%;">긴급 배송 용달 운송료</td>
+                        <td class="col-amt" style="width: 15%;">5,070,000</td>
+                    </tr>
+                
+                    <tr>
+                        <td style="width: 8%;">6</td>
+                        <td class="col-item" style="width: 25%;">봄날꽃집 (간이과세자)</td>
+                        <td style="width: 22%;">842-01-22421</td>
+                        <td style="width: 8%;">1</td>
+                        <td class="col-item" style="width: 22%;">개업·행사 축하 화환</td>
+                        <td class="col-amt" style="width: 15%;">122,000</td>
+                    </tr>
+                
+            </table>
+        
+    
+
+    <div class="footer-box">
+        <p><strong>[합계 및 작성 정보]</strong></p>
+        <p>- 거래 건수: 6건</p>
+        <p>- 거래금액 합계: <strong>11,126,000원</strong></p>
+        <p>- 작성: 재무회계팀 서하윤 / 확인 박수진 팀장</p>
+    </div>
+
+</body>
+</html>

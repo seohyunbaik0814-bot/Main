@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비즈폼_감사 보고서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        h1 { text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 30px; letter-spacing: 5px; color: #154d71; }
+        h3 { font-size: 16px; border-left: 4px solid #154d71; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #154d71; }
+        
+        /* 상단 보고 정보 테이블 (선 없음) */
+        .report-info { margin-bottom: 30px; }
+        .report-info table { width: 100%; border: none; }
+        .report-info th { width: 15%; text-align: left; padding: 5px; color: #555; }
+        .report-info td { width: 85%; padding: 5px; font-weight: bold; }
+        
+        /* 일반 필드 및 표 스타일 */
+        .field-table, .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .field-table th, .field-table td, .data-table th, .data-table td { border: 1px solid #ccc; padding: 8px; font-size: 13px; vertical-align: middle; }
+        .field-table th, .data-table th { background-color: #f4f6f8; font-weight: bold; text-align: center; }
+        .field-table th { text-align: left; width: 20%; }
+        .field-table td { width: 80%; }
+        
+        /* 텍스트 본문 스타일 */
+        .text-content { font-size: 13px; text-align: justify; padding: 15px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 4px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <h1>감사 보고서</h1>
+
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <div class="report-info">
+                <table>
+                    
+                    <tr>
+                        <th>수신</th>
+                        <td>대표이사 한상훈 귀하</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>발신</th>
+                        <td>(주)에이치에스리테일 내부감사팀 석지원</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고일자</th>
+                        <td>2026년 05월 08일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고제목</th>
+                        <td>PB상품 OEM 계약 및 기술자료 관리 특별 감사 보고서</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <hr style="border: 1px solid #154d71; margin-bottom: 30px;">
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사보고서 개요</h3>
+            
+            
+                <table class="field-table">
+                    
+                    <tr>
+                        <th>감사기간</th>
+                        <td>2025년 7월 1일 ~ 2026년 3월 31일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사목적</th>
+                        <td>경쟁사에서 오트바이트와 유사한 배합의 제품이 출시되어 레시피 유출 의혹이 제기됨에 따라, OEM 제조사((주)제일식품 외)와의 비밀유지계약 이행 및 사내 기술자료 반출 관리 실태를 점검하기 위함입니다.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사구분</th>
+                        <td>[ ]정기감사 [ ]수시감사 [√]특별감사 [ ]기타 (   )</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>피감사부</th>
+                        <td>상품본부 PB상품기획팀, 품질관리팀</td>
+                    </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사원</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>소속</th>
+                        
+                            <th>직책</th>
+                        
+                            <th>성명</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">과장</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">석지원 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">대리</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">연태민 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">전략기획실</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">주임(IT 지원)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">양현수 (인)</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>본문</h3>
+            
+            
+                <div class="text-content">
+                    본 감사는 (주)에이치에스리테일의 제9기(2025년 7월 1일 ~ 2026년 3월 31일) PB상품 OEM 및 기술자료 관리 등 업무 전반에 걸쳐 감사를 실시하였으며, 그 결과를 다음과 같이 보고합니다. 본 감사는 회사의 회계장부와 관련 증빙서류, 재무제표(재무상태표, 포괄손익계산서, 자본변동표, 현금흐름표 및 주석)에 대해 일반적인 회계 감사 기준에 따라 감사를 수행하였습니다. 또한, 회사의 업무 전반에 걸쳐 내부통제 시스템의 적절성 및 운영의 효율성, 그리고 관련 법규 준수 여부 등을 검토하였습니다. 주요 경영진 및 담당 부서와의 면담을 통해 관련 자료의 신뢰성을 확인하고 필요한 정보 및 설명을 요청하였습니다.
+                </div>
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사결과 및 주요 발견 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>구분</th>
+                        
+                            <th>주요내용</th>
+                        
+                            <th>발견사항</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무 부문</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">OEM 단가 계약</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">오트바이트 솔티캐러멜맛 OEM 단가가 계약서 대비 3.2% 높게 정산(차액 1,430만원)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">금형·설비 자산</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">OEM 공장 내 당사 소유 금형 2벌의 자산 실사 미실시</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">업무 프로세스</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">비밀유지계약 이행</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">NDA 별첨 기술자료 보유자 명단에 없는 제조사 직원 2명이 배합표 열람</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">자료 반환·폐기</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">계약 종료 협력사 1곳의 기술자료 폐기확인서 미수령</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부 통제</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">사내 자료 반출</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">배합비 파일을 개인 이메일로 전송한 이력 3건(담당자 확인 결과 재택근무 목적)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">문서 등급 표시</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">레시피·원가 자료에 대외비 표시 누락</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>개선 권고 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>항목</th>
+                        
+                            <th>상세내용</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">OEM 단가 차액 회수</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">계약 단가 초과 정산분 1,430만원을 다음 대금에서 상계</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">금형 실사</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">반기 1회 OEM 공장 방문 시 당사 소유 금형 실사 및 사진 기록</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">보유자 명단 갱신</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">NDA 제8조에 따라 기술자료 보유자 변경 시 사전 서면 동의 절차 이행</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">4</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">폐기확인서 징구</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">계약 종료 협력사에 폐기 증명서 제출을 서면 요청하고 미제출 시 법적 조치 검토</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">5</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">외부 전송 차단</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">레시피·원가 문서는 DLP로 개인 메일 전송을 차단하고 예외는 승인제</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">6</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">문서 등급 체계</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">기술자료에 대외비 등급을 표시하고 문서관리시스템에서 열람 권한을 제한</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>결론</h3>
+            
+            
+                <div class="text-content">
+                    유출 의혹과 관련하여 당사 임직원 또는 OEM 제조사의 고의적 유출 증거는 확인되지 않았습니다. 다만 NDA 보유자 명단 관리와 사내 자료 반출 통제에 공백이 있어, 기술자료 보호 체계를 즉시 강화할 것을 권고합니다.
+                </div>
+            
+            
+        
+    
+
+</body>
+</html>

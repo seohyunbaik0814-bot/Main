@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>(비즈폼)[디자인] 표준 견적서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 0; color: #333; position: relative; }
+        
+        /* 표지 및 타이틀 */
+        .title-box { background-color: #1a4f78; color: #fff; text-align: center; padding: 40px 0; margin-bottom: 30px; letter-spacing: 5px; }
+        .title-box h1 { margin: 0; font-size: 32px; font-weight: bold; }
+        
+        /* 최상단: 받는 분(회사) 및 담당자 */
+        .header-section { display: flex; justify-content: space-between; align-items: flex-end; padding: 0 30px; margin-bottom: 20px; }
+        .receiver-info { font-size: 18px; font-weight: bold; border-bottom: 2px solid #333; padding-bottom: 5px; width: 45%; }
+        
+        /* 공급자 정보 박스 */
+        .supplier-box { width: 45%; border: 2px solid #1a4f78; border-radius: 5px; padding: 10px; font-size: 11px; }
+        .supplier-table { width: 100%; border-collapse: collapse; }
+        .supplier-table th, .supplier-table td { padding: 4px; text-align: left; }
+        .supplier-table th { font-weight: bold; width: 30%; color: #1a4f78; }
+        
+        /* 견적 정보 테이블 (가운데 바) */
+        .quote-info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; text-align: center; font-size: 13px; }
+        .quote-info-table th { background-color: #f0f4f8; padding: 10px; border-top: 2px solid #1a4f78; border-bottom: 1px solid #ccc; font-weight: bold; }
+        .quote-info-table td { padding: 10px; border-bottom: 1px solid #ccc; }
+        
+        /* 합계 금액 표출부 */
+        .total-amount-box { margin: 30px; text-align: center; font-size: 18px; font-weight: bold; padding: 15px; background-color: #fff9e6; border: 2px solid #f2c94c; border-radius: 5px; }
+        
+        /* 메인 품목 테이블 */
+        .main-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 12px; }
+        .main-table th, .main-table td { border: 1px solid #ccc; padding: 10px 5px; text-align: center; vertical-align: middle; }
+        .main-table th { background-color: #1a4f78; color: #fff; font-weight: bold; }
+        .main-table td.col-item { text-align: left; padding-left: 10px; font-weight: bold; }
+        .main-table td.amt { text-align: right; font-family: 'Courier New', Courier, monospace; font-weight: bold; padding-right: 5px; }
+        
+        /* 합계 행 */
+        .total-row td { background-color: #f0f4f8; font-weight: bold; }
+        
+        /* 특이사항 */
+        .note-box { border: 1px solid #ccc; padding: 15px; font-size: 12px; background-color: #fcfcfc; border-left: 5px solid #1a4f78; }
+        .note-box h4 { margin-top: 0; margin-bottom: 10px; color: #1a4f78; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 문서 제목 -->
+    <div class="title-box">
+        <h1>견 적 서</h1>
+    </div>
+
+    <!-- 2. 받는 분 & 공급자 정보 -->
+    <div class="header-section">
+        <div class="receiver-info">
+            <span style="font-size: 20px;">브런치카페 모닝빈</span> <span style="font-size: 14px;">석하윤 대표</span> 귀하
+        </div>
+        
+        <div class="supplier-box">
+            <table class="supplier-table">
+                <tr><th>등록번호</th><td colspan="3">215-87-45128</td></tr>
+                <tr><th>상호(법인명)</th><td>(주)에이치에스리테일</td><th>대표자</th><td>한상훈</td></tr>
+                <tr><th>주소</th><td colspan="3">서울특별시 송파구 법원로 128, 에이치에스타워 7층</td></tr>
+                <tr><th>업태</th><td>도매 및 소매업, 서비스업</td><th>종목</th><td>음·식료품 도매, 가맹사업, 커피전문점</td></tr>
+                <tr><th>전화번호</th><td>02-6952-7700</td><th>팩스</th><td>02-6952-7701</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 3. 견적 기본 정보 -->
+    <table class="quote-info-table">
+        <tr>
+            <th>견적일</th>
+            <th>결제방법</th>
+            <th>견적담당자</th>
+            <th>연락처</th>
+        </tr>
+        <tr>
+            <td>2025년 07월 22일</td>
+            <td>□ 현금  □ 카드  ■ 기타</td>
+            <td>문태양 ((주)에이치에스리테일)</td>
+            <td>010-5537-2281</td>
+        </tr>
+    </table>
+    
+    <!-- 4. 합계 금액 박스 -->
+    <div class="total-amount-box">
+        합계금액(공급가액+세액): <span style="color: #d9534f; font-size: 22px;">구십팔만오천육백원整 (￦ 985,600)</span>
+    </div>
+
+    <!-- 5. 품목 리스트 -->
+    
+        
+            <table class="main-table">
+                <tr>
+                    
+                        <th>품명</th>
+                    
+                        <th>규격</th>
+                    
+                        <th>수량</th>
+                    
+                        <th>단가</th>
+                    
+                        <th>공급가액</th>
+                    
+                        <th>세액</th>
+                    
+                        <th>비고</th>
+                    
+                </tr>
+                
+                    <tr>
+                        <td class="col-item">냉동 소금빵 생지</td>
+                        <td>40개입</td>
+                        <td class="amt">15</td>
+                        <td class="amt">32,000</td>
+                        <td class="amt">480,000</td>
+                        <td class="amt">48,000</td>
+                        <td style="font-size: 11px; color: #555;"></td>
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">냉동 크로와상 생지</td>
+                        <td>50개입</td>
+                        <td class="amt">10</td>
+                        <td class="amt">35,000</td>
+                        <td class="amt">350,000</td>
+                        <td class="amt">35,000</td>
+                        <td style="font-size: 11px; color: #555;"></td>
+                    </tr>
+                
+                    <tr>
+                        <td class="col-item">카라멜 소스</td>
+                        <td>1.5kg</td>
+                        <td class="amt">6</td>
+                        <td class="amt">11,000</td>
+                        <td class="amt">66,000</td>
+                        <td class="amt">6,600</td>
+                        <td style="font-size: 11px; color: #555;"></td>
+                    </tr>
+                
+                
+                <!-- 합계 행 (템플릿 엔진으로 별도 추출한 값 주입) -->
+                <tr class="total-row">
+                    <td colspan="2" style="text-align: center;">계</td>
+                    <td class="amt">31</td>
+                    <td></td>
+                    <td class="amt">896,000</td>
+                    <td class="amt">89,600</td>
+                    <td></td>
+                </tr>
+            </table>
+        
+    
+
+    <!-- 6. 특이사항 -->
+    <div class="note-box">
+        <h4>특이사항</h4>
+        <!-- 줄바꿈 처리 -->
+        결제방법(기타): 제로페이 비즈 또는 어음 불가, 계좌이체 시 하나은행 391-910022-18604 (예금주 (주)에이치에스리테일)<br>냉동 차량 주 2회(화·금) 배송
+    </div>
+
+</body>
+</html>

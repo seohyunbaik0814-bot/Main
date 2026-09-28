@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비즈폼_감사 보고서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        h1 { text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 30px; letter-spacing: 5px; color: #154d71; }
+        h3 { font-size: 16px; border-left: 4px solid #154d71; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #154d71; }
+        
+        /* 상단 보고 정보 테이블 (선 없음) */
+        .report-info { margin-bottom: 30px; }
+        .report-info table { width: 100%; border: none; }
+        .report-info th { width: 15%; text-align: left; padding: 5px; color: #555; }
+        .report-info td { width: 85%; padding: 5px; font-weight: bold; }
+        
+        /* 일반 필드 및 표 스타일 */
+        .field-table, .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .field-table th, .field-table td, .data-table th, .data-table td { border: 1px solid #ccc; padding: 8px; font-size: 13px; vertical-align: middle; }
+        .field-table th, .data-table th { background-color: #f4f6f8; font-weight: bold; text-align: center; }
+        .field-table th { text-align: left; width: 20%; }
+        .field-table td { width: 80%; }
+        
+        /* 텍스트 본문 스타일 */
+        .text-content { font-size: 13px; text-align: justify; padding: 15px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 4px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <h1>감사 보고서</h1>
+
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <div class="report-info">
+                <table>
+                    
+                    <tr>
+                        <th>수신</th>
+                        <td>(주)에이치에스리테일 이사회 귀하</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>발신</th>
+                        <td>(주)에이치에스리테일 내부감사팀 황인섭</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고일자</th>
+                        <td>2026년 08월 12일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고제목</th>
+                        <td>2026년 상반기 정기 감사 보고서(인사·급여)</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <hr style="border: 1px solid #154d71; margin-bottom: 30px;">
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사보고서 개요</h3>
+            
+            
+                <table class="field-table">
+                    
+                    <tr>
+                        <th>감사기간</th>
+                        <td>2026년 1월 1일 ~ 2026년 6월 30일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사목적</th>
+                        <td>2026년 최저임금(10,320원) 및 4대보험 요율 변경 반영 여부, 급여 지급과 근태 관리, 근로계약서 작성·교부 의무 이행 실태를 검토하기 위함입니다.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사구분</th>
+                        <td>[√]정기감사 [ ]수시감사 [ ]특별감사 [ ]기타 (   )</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>피감사부</th>
+                        <td>경영지원본부 인사총무팀</td>
+                    </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사원</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>소속</th>
+                        
+                            <th>직책</th>
+                        
+                            <th>성명</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">팀장(부장)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">황인섭 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">과장</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">석지원 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">대리</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">연태민 (인)</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>본문</h3>
+            
+            
+                <div class="text-content">
+                    본 감사는 (주)에이치에스리테일의 제9기(2026년 1월 1일 ~ 2026년 6월 30일) 상반기 인사·급여 업무 등 업무 전반에 걸쳐 감사를 실시하였으며, 그 결과를 다음과 같이 보고합니다. 본 감사는 회사의 회계장부와 관련 증빙서류, 재무제표(재무상태표, 포괄손익계산서, 자본변동표, 현금흐름표 및 주석)에 대해 일반적인 회계 감사 기준에 따라 감사를 수행하였습니다. 또한, 회사의 업무 전반에 걸쳐 내부통제 시스템의 적절성 및 운영의 효율성, 그리고 관련 법규 준수 여부 등을 검토하였습니다. 주요 경영진 및 담당 부서와의 면담을 통해 관련 자료의 신뢰성을 확인하고 필요한 정보 및 설명을 요청하였습니다.
+                </div>
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사결과 및 주요 발견 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>구분</th>
+                        
+                            <th>주요내용</th>
+                        
+                            <th>발견사항</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무 부문</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">급여 계산 정확성</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">2026년 건강보험 요율 변경분이 2월 급여까지 미반영(과소공제 총 128만원)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">연장근로수당</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">물류센터 성수기 연장근로 수당 산정 시 식대를 통상임금에서 제외해 과소 지급 우려</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">업무 프로세스</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">근로계약서 교부</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">단시간 근로자 3명의 근로계약서 교부 확인서 미징구</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">근태 기록</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">물류센터 수기 출근부와 출입기록 불일치 14건</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부 통제</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">급여 변경 승인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">급여 마스터 변경이 담당자 1인 권한으로 가능</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">최저임금 준수</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">주말 파트타이머 1명 시급이 1월 한 달간 2025년 기준으로 지급</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>개선 권고 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>항목</th>
+                        
+                            <th>상세내용</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">요율 변경 사전 반영</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">보험요율·최저임금 변경은 12월 중 급여 시스템에 사전 반영하고 1월 급여 대사</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">통상임금 재검토</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">고정 지급 수당의 통상임금 포함 여부를 노무사 검토 후 미지급분 정산</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">계약서 교부 확인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">전 근로자 근로계약서 교부 확인서를 전자서명으로 징구</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">4</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">출퇴근 기록 자동화</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">물류센터 출입게이트 기록을 근태 시스템과 연동하고 수기 출근부 폐지</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">5</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">급여 변경 이중 승인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">급여 마스터 변경은 담당자 입력 후 팀장 승인 시 반영</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">6</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">최저임금 차액 지급</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">미달 지급분을 7월 급여에 소급 지급하고 재발 방지 체크리스트 운영</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>결론</h3>
+            
+            
+                <div class="text-content">
+                    인사·급여 업무는 대체로 적정하나 연초 제도 변경 반영 지연과 현장 근태 관리에서 개선이 필요합니다. 최저임금 미달 및 연장수당 과소 지급 우려 건은 법적 리스크가 있으므로 즉시 정산할 것을 권고합니다.
+                </div>
+            
+            
+        
+    
+
+</body>
+</html>

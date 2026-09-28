@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비즈폼_감사 보고서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        h1 { text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 30px; letter-spacing: 5px; color: #154d71; }
+        h3 { font-size: 16px; border-left: 4px solid #154d71; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #154d71; }
+        
+        /* 상단 보고 정보 테이블 (선 없음) */
+        .report-info { margin-bottom: 30px; }
+        .report-info table { width: 100%; border: none; }
+        .report-info th { width: 15%; text-align: left; padding: 5px; color: #555; }
+        .report-info td { width: 85%; padding: 5px; font-weight: bold; }
+        
+        /* 일반 필드 및 표 스타일 */
+        .field-table, .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .field-table th, .field-table td, .data-table th, .data-table td { border: 1px solid #ccc; padding: 8px; font-size: 13px; vertical-align: middle; }
+        .field-table th, .data-table th { background-color: #f4f6f8; font-weight: bold; text-align: center; }
+        .field-table th { text-align: left; width: 20%; }
+        .field-table td { width: 80%; }
+        
+        /* 텍스트 본문 스타일 */
+        .text-content { font-size: 13px; text-align: justify; padding: 15px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 4px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <h1>감사 보고서</h1>
+
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <div class="report-info">
+                <table>
+                    
+                    <tr>
+                        <th>수신</th>
+                        <td>(주)에이치에스리테일 이사회 귀하</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>발신</th>
+                        <td>(주)에이치에스리테일 내부감사팀 황인섭</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고일자</th>
+                        <td>2026년 02월 20일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고제목</th>
+                        <td>2025년 하반기 정기 감사 보고서(매출채권·결산)</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <hr style="border: 1px solid #154d71; margin-bottom: 30px;">
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사보고서 개요</h3>
+            
+            
+                <table class="field-table">
+                    
+                    <tr>
+                        <th>감사기간</th>
+                        <td>2025년 7월 1일 ~ 2025년 12월 31일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사목적</th>
+                        <td>제8기 기말 결산을 앞두고 매출채권의 실재성과 회수 가능성, 거래처별 여신한도 관리 및 연말 매출 인식 시점(cut-off)의 적정성을 검토하여 외부감사 전 리스크를 사전에 해소하는 데 목적이 있습니다.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사구분</th>
+                        <td>[√]정기감사 [ ]수시감사 [ ]특별감사 [ ]기타 (   )</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>피감사부</th>
+                        <td>재무회계팀, 영업본부 B2B영업팀·키어카운트팀</td>
+                    </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사원</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>소속</th>
+                        
+                            <th>직책</th>
+                        
+                            <th>성명</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">팀장(부장)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">황인섭 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">과장</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">석지원 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부감사팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">대리</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">연태민 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무회계팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">사원(지원)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">서하윤 (인)</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>본문</h3>
+            
+            
+                <div class="text-content">
+                    본 감사는 (주)에이치에스리테일의 제8기(2025년 7월 1일 ~ 2025년 12월 31일) 하반기 매출채권 관리 및 기말 결산 등 업무 전반에 걸쳐 감사를 실시하였으며, 그 결과를 다음과 같이 보고합니다. 본 감사는 회사의 회계장부와 관련 증빙서류, 재무제표(재무상태표, 포괄손익계산서, 자본변동표, 현금흐름표 및 주석)에 대해 일반적인 회계 감사 기준에 따라 감사를 수행하였습니다. 또한, 회사의 업무 전반에 걸쳐 내부통제 시스템의 적절성 및 운영의 효율성, 그리고 관련 법규 준수 여부 등을 검토하였습니다. 주요 경영진 및 담당 부서와의 면담을 통해 관련 자료의 신뢰성을 확인하고 필요한 정보 및 설명을 요청하였습니다.
+                </div>
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사결과 및 주요 발견 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>구분</th>
+                        
+                            <th>주요내용</th>
+                        
+                            <th>발견사항</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무 부문</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">매출채권 연령 분석</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">90일 초과 채권 12개 거래처 합계 1억 4,300만원(개인마트·PC방 채널 집중)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">기말 매출 cut-off</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">12월 31일 출고분 중 1월 2일 도착 건 2,860만원이 12월 매출로 인식</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">업무 프로세스</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">여신한도 관리</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">여신한도 초과 거래처 5곳에 영업팀장 승인 없이 추가 출고</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">거래처 잔액 조회</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">조회서 회신율 68% (목표 90%), 미회신 거래처 대체절차 미실시</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부 통제</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">대손 판단 기준</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">대손충당금 설정률이 2022년 기준으로 유지되어 채널별 부실률 미반영</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">매출 할인 승인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">연말 프로모션 추가할인(최대 12%) 중 3건이 전결권자 승인 전 적용</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>개선 권고 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>항목</th>
+                        
+                            <th>상세내용</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">장기 미회수 채권 회수</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">90일 초과 채권에 대해 1월 중 내용증명 발송 및 분할상환 약정 체결, 회수 불가 건은 대손 처리 검토</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">cut-off 기준 명문화</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">인도기준 매출 인식을 위해 운송장 도착일자를 ERP 매출일자와 연동</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">여신 시스템 차단</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">여신한도 초과 시 ERP 출고지시 자동 보류, 해제는 영업본부장 승인</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">4</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">잔액조회 대체절차</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">미회신 거래처는 후속 입금 확인 및 거래명세표 대사로 대체절차 수행</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">5</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">충당금 설정률 재산정</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">최근 3개년 채널별 부실률로 설정률을 재산정하여 기말 결산에 반영</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">6</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">할인 전결 규정 준수</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">프로모션 할인은 사전 품의 후 적용하며 POS·ERP 가격표 반영 권한을 영업기획팀으로 일원화</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>결론</h3>
+            
+            
+                <div class="text-content">
+                    감사 결과, 매출채권은 전반적으로 실재하고 있으나 개인 채널 중심의 장기 미회수 채권과 연말 cut-off 오류가 확인되었습니다. 기말 수정분개(매출 2,860만원 이연)와 대손충당금 재산정을 결산에 반영할 것을 권고하며, 이를 이행할 경우 외부감사 수정사항을 최소화할 수 있을 것으로 판단됩니다.
+                </div>
+            
+            
+        
+    
+
+</body>
+</html>

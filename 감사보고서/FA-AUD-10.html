@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>비즈폼_감사 보고서</title>
+    <style>
+        body { font-family: 'Malgun Gothic', '맑은 고딕', sans-serif; width: 850px; margin: 0 auto; padding: 40px; color: #333; font-size: 13px; line-height: 1.6; }
+        h1 { text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 30px; letter-spacing: 5px; color: #154d71; }
+        h3 { font-size: 16px; border-left: 4px solid #154d71; padding-left: 10px; margin-top: 30px; margin-bottom: 10px; color: #154d71; }
+        
+        /* 상단 보고 정보 테이블 (선 없음) */
+        .report-info { margin-bottom: 30px; }
+        .report-info table { width: 100%; border: none; }
+        .report-info th { width: 15%; text-align: left; padding: 5px; color: #555; }
+        .report-info td { width: 85%; padding: 5px; font-weight: bold; }
+        
+        /* 일반 필드 및 표 스타일 */
+        .field-table, .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; table-layout: fixed; }
+        .field-table th, .field-table td, .data-table th, .data-table td { border: 1px solid #ccc; padding: 8px; font-size: 13px; vertical-align: middle; }
+        .field-table th, .data-table th { background-color: #f4f6f8; font-weight: bold; text-align: center; }
+        .field-table th { text-align: left; width: 20%; }
+        .field-table td { width: 80%; }
+        
+        /* 텍스트 본문 스타일 */
+        .text-content { font-size: 13px; text-align: justify; padding: 15px; background-color: #fcfcfc; border: 1px solid #eee; border-radius: 4px; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <h1>감사 보고서</h1>
+
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <div class="report-info">
+                <table>
+                    
+                    <tr>
+                        <th>수신</th>
+                        <td>(주)에이치에스리테일 이사회 및 주주 귀하</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>발신</th>
+                        <td>(주)에이치에스리테일 재무회계팀 박수진 (외부감사인: 가온회계법인)</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고일자</th>
+                        <td>2026년 03월 17일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>보고제목</th>
+                        <td>제8기(2025년) 외부 회계감사 결과 보고</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <hr style="border: 1px solid #154d71; margin-bottom: 30px;">
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사보고서 개요</h3>
+            
+            
+                <table class="field-table">
+                    
+                    <tr>
+                        <th>감사기간</th>
+                        <td>2025년 1월 1일 ~ 2025년 12월 31일</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사목적</th>
+                        <td>외부감사인 가온회계법인이 수행한 제8기 재무제표 감사 결과(감사의견 및 주요 지적사항)를 이사회에 보고하고, 수정사항 반영 현황과 향후 개선계획을 공유하기 위함입니다.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>감사구분</th>
+                        <td>[ ]정기감사 [ ]수시감사 [ ]특별감사 [√]기타 ( 외부감사 결과보고 )</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>피감사부</th>
+                        <td>전사(재무제표)</td>
+                    </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사원</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>소속</th>
+                        
+                            <th>직책</th>
+                        
+                            <th>성명</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">가온회계법인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">담당이사(공인회계사)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">민경석 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">가온회계법인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">매니저(공인회계사)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">도하은 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">가온회계법인</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">시니어(공인회계사)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">변재혁 (인)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무회계팀</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">팀장(대응)</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">박수진 (인)</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>본문</h3>
+            
+            
+                <div class="text-content">
+                    본 감사는 (주)에이치에스리테일의 제8기(2025년 1월 1일 ~ 2025년 12월 31일) 재무제표 전반(외부감사) 등 업무 전반에 걸쳐 감사를 실시하였으며, 그 결과를 다음과 같이 보고합니다. 본 감사는 회사의 회계장부와 관련 증빙서류, 재무제표(재무상태표, 포괄손익계산서, 자본변동표, 현금흐름표 및 주석)에 대해 일반적인 회계 감사 기준에 따라 감사를 수행하였습니다. 또한, 회사의 업무 전반에 걸쳐 내부통제 시스템의 적절성 및 운영의 효율성, 그리고 관련 법규 준수 여부 등을 검토하였습니다. 주요 경영진 및 담당 부서와의 면담을 통해 관련 자료의 신뢰성을 확인하고 필요한 정보 및 설명을 요청하였습니다.
+                </div>
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>감사결과 및 주요 발견 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>구분</th>
+                        
+                            <th>주요내용</th>
+                        
+                            <th>발견사항</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">재무 부문</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">감사의견</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">가온회계법인은 제8기 재무제표에 대하여 '적정' 의견 표명 (매출 450억원, 당기순이익 48억원 규모)</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">감사 수정사항</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">매출 cut-off 이연 2,860만원 및 대손충당금 추가설정 3,120만원 반영</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">업무 프로세스</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">핵심감사사항</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">가맹사업 수익 인식(가맹비 기간 안분) 검토 - 중요 왜곡 없음</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">재고자산 실사 입회</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">용인물류센터 기말 실사 입회 결과 차이율 0.4%로 허용범위 이내</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부 통제</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">내부회계관리제도</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">ERP 권한 분리 미흡 1건을 유의적 미비점으로 통보</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;"></td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">관리 서신</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">수입 원가 계산 및 로열티 POS 연동 관련 개선 권고 2건</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>개선 권고 사항</h3>
+            
+            
+                <table class="data-table">
+                    <tr>
+                        
+                            <th>순번</th>
+                        
+                            <th>항목</th>
+                        
+                            <th>상세내용</th>
+                        
+                    </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">1</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">수정사항 확정 반영</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">감사 수정분개를 확정 재무제표 및 법인세 신고에 반영</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">2</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">가맹비 수익 안분 유지</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">가맹비를 계약기간에 걸쳐 인식하는 현행 정책을 주석에 명확히 공시</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">3</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">ERP 권한 분리</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">전표 입력·승인·자금 지급 권한을 분리하고 반기별 권한 검토</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">4</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">수입원가 체계화</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">미착상품 부대비용 배부 기준을 문서화하여 원가 계산의 일관성 확보</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">5</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">로열티 자동 집계</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">가맹점 POS 연동을 통한 로열티 자동 산정 시스템 조기 구축</td>
+                            
+                        </tr>
+                    
+                        <tr>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">6</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: center;">차기 감사 준비</td>
+                            
+                                <!-- 순번 등 짧은 내용은 가운데 정렬, 긴 내용은 왼쪽 정렬 -->
+                                <td style="text-align: left;">제9기 반기 검토에 대비하여 결산 체크리스트와 증빙 전자보관 체계 정비</td>
+                            
+                        </tr>
+                    
+                </table>
+                
+            
+            
+        
+    
+        <!-- 보고 정보는 상단에 타이틀 없이 깔끔하게 배치 -->
+        
+            <h3>결론</h3>
+            
+            
+                <div class="text-content">
+                    제8기 재무제표는 외부감사인으로부터 적정 의견을 받았으며, 감사 수정사항은 모두 확정 재무제표에 반영되었습니다. 통보된 내부통제 미비점은 2026년 상반기 내 개선을 완료하여 차기 감사에서 재지적되지 않도록 하겠습니다.
+                </div>
+            
+            
+        
+    
+
+</body>
+</html>
